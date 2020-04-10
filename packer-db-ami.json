@@ -1,0 +1,39 @@
+{
+  "variables" : {
+    "vpc"        : "{{env `BUILD_VPC_ID`}}",
+    "subnet"     : "{{env `BUILD_SUBNET_ID`}}",
+    "aws_region" : "{{env `AWS_REGION`}}",
+    "ami_name"   : "oouve-prod-amzn-{{isotime \"02-Jan-06 03_04_05\"}}",
+    "source_ami" : "ami-00068cd7555f543d5"
+  },
+  "buidlers" : [
+    {
+      "name"      : "AWS AMI Builder - oouve",
+      "vpc_id"    : "{{user `vpc`}}",
+      "region"    : "{{user `aws_region`}}",
+      "subnet_id" : "{{user `subnet`}}",
+      "ami_name"  : "{{user `ami_name`}}",
+      "type"      : "amazon-ebs",
+      "instance_type": "t2.micro",
+      "source_ami" : "{{user `source_ami`}}",
+      "associate_public_ip_address": "true",
+      "ssh_username": "ec2-user",
+      "tags": {
+        "Name": "{{user `ami_name`}}"
+      },      
+
+    }
+  ],
+  "provisioner" : [
+    {
+
+    }
+  ],
+  "post-processor" : [
+    {
+      "type" : "manifest",
+      "output" : "manifest.json",
+      "strip_path" : true
+    }
+  ]
+}

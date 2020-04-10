@@ -1,0 +1,41 @@
+{
+  "builds": [
+    {
+      "name": "AWS AMI Builder - oouve",
+      "builder_type": "amazon-ebs",
+      "build_time": 1574872100,
+      "files": null,
+      "artifact_id": "us-east-1:ami-0ea3113009cba3c3d",
+      "packer_run_uuid": "7cd862eb-7337-121d-50c8-1648c9b8d888",
+      "custom_data": null
+    },
+    {
+      "name": "AWS AMI Builder - oouve",
+      "builder_type": "amazon-ebs",
+      "build_time": 1574994490,
+      "files": null,
+      "artifact_id": "us-east-1:ami-07d8826f65c5059fd",
+      "packer_run_uuid": "11773a9c-35d4-28c2-3f6b-64b312df66ea",
+      "custom_data": null
+    },
+    {
+      "name": "AWS AMI Builder - oouve",
+      "builder_type": "amazon-ebs",
+      "build_time": 1574998893,
+      "files": null,
+      "artifact_id": "us-east-1:ami-0efe19c6c515f6642",
+      "packer_run_uuid": "e4439773-add1-05eb-37f2-1819468175cb",
+      "custom_data": null
+    },
+    {
+      "name": "AWS AMI Builder - oouve",
+      "builder_type": "amazon-ebs",
+      "build_time": 1586076810,
+      "files": null,
+      "artifact_id": "us-east-1:ami-0d65fa528a3dbdf13",
+      "packer_run_uuid": "cd35c572-caf8-8f96-c837-69d2a7374ae0",
+      "custom_data": null
+    }
+  ],
+  "last_run_uuid": "cd35c572-caf8-8f96-c837-69d2a7374ae0"
+}
